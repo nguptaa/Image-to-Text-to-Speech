@@ -1,8 +1,10 @@
-try:
-    from PIL import Image
-except ImportError:
-    import Image
-# import pytesseract
-from pytesseract import image_to_string
-a=image_to_string(Image.open('hello.pdf'))
-print(a.strip(''))
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def main():
+    return "Welcome!"
+
+if __name__ == "__main__":
+    app.run()
+
