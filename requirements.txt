@@ -1,5 +1,2 @@
-gunicorn
-pillow
-pytesseract
-numpy
-opencv-python
+Flask==0.12.2
+gunicorn==19.6.0
