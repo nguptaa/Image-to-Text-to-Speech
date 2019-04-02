@@ -1,12 +1,17 @@
 var express = require("express");
 var app = express();
-var port = 3000;
 
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
 
+// make express look in the public directory for assets (css/js/img)
+app.use(express.static(__dirname + '/public'));
+
+// set the home page route
 app.get('/', function(req, res){
-    res.render('home.ejs');
+    res.render('index.ejs');
 }); 
-
 
 app.listen(port, function(){
     console.log('Example app listening on port ${port}!');
