@@ -1,0 +1,24 @@
+{
+  "name": "image-to-text-to-speech",
+  "version": "1.0.0",
+  "description": "image to text to speech web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguptaa/Image-to-Text-to-Speech.git"
+  },
+  "author": "Nikhil Gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nguptaa/Image-to-Text-to-Speech/issues"
+  },
+  "homepage": "https://github.com/nguptaa/Image-to-Text-to-Speech#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "tesseract.js": "^1.0.14"
+  }
+}
