@@ -105,12 +105,12 @@ h6 {
 header.masthead {
     position: relative;
     background-color: #343a40;
-    /* background: url("../images/bg-masthead.jpg") no-repeat center center; */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%),
-    url("../images/bg-masthead.jpg");
+    background: url("../images/bg.jpg") no-repeat center center;
     background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
+    /* filter: brightness(50%); */
+
 }
 
 header.masthead .overlay {
@@ -138,29 +138,22 @@ header.masthead h1 {
     }
 }
 
-.showcase .showcase-text {
-    padding: 3rem;
-}
-
-.showcase .showcase-img {
-    min-height: 30rem;
-    background-size: cover;
-}
-
-@media (min-width: 768px) {
-    .showcase .showcase-text {
-        padding: 7rem;
-    }
-}
-
-
-
 footer.footer {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 20px;
 }
 
 img{
     height: 10em;
     width:300px;
+}
+
+hr.footerhr {
+    position: relative;
+    top: -25px;
+    border: 0;
+    height: 1px;
+    width: 40%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), grey, rgba(0, 0, 0, 0));
 }
