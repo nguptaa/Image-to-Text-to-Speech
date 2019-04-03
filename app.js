@@ -1,4 +1,5 @@
 var express = require("express");
+// var tesseract = require('tesseract.js')
 var app = express();
 
 // set the port of our application
@@ -13,6 +14,10 @@ app.get('/', function(req, res){
     res.render('index.ejs');
 }); 
 
+
+
+
 app.listen(port, function(){
-    console.log('Example app listening on port ${port}!');
+    console.log('Imgeech app running on port ' + port);
 });
+
