@@ -21,7 +21,9 @@ h6 {
 .rounded:hover{
     transform: scale(1.05);
     transition: transform 0.2s;
-
+}
+.cust{
+    margin: 10px;
 }
 
 header.masthead {
