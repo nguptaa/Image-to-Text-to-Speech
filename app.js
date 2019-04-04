@@ -7,8 +7,6 @@ const multer = require('multer');
 const GridFsStorage = require('multer-gridfs-storage');
 const Grid = require('gridfs-stream');
 const methodOverride = require('method-override');
-// var Tesseract = require('tesseract.js')
-
 
 const app = express();
 
@@ -175,14 +173,6 @@ app.delete('/files/:id', (req, res) => {
     });
 });
 
-
-// Tesseract.recognize(myImage)
-//     .progress(function (p) {
-//         console.log('progress', p)
-//     })
-//     .then(function (result) {
-//         console.log('result', result)
-//     })
 
 app.listen(port, function () {
     console.log('Imgeech app running on port ' + port);
