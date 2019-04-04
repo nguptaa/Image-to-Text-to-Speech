@@ -8,12 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<!-- fontawesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
 </head>
 <style>
     body {
@@ -25,13 +27,14 @@
         width: 100%;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     }
-    .imp{
-    display: flex;
+
+    .imp {
+        display: flex;
     }
 
     .cen {
-    flex-grow: 1;
-    text-align: center;
+        flex-grow: 1;
+        text-align: center;
     }
 </style>
 
@@ -46,12 +49,12 @@
                 </div>
                 <div class="display-4 mb-3">Scanned Image</div>
                 <div class="card card-body">
-                <img src="images/samples/mobile1.jpeg" class="img-fluid rounded" alt="img1">
-                <hr>
-                <h2>Result</h2>
-                <span id="progress"></span>
-                <div id="result"></div>
-                <hr>
+                    <img src="images/samples/main.jpg" class="img-fluid rounded" alt="img1">
+                    <hr>
+                    <h2>Result</h2>
+                    <span id="progress"></span>
+                    <div id="result"></div>
+                    <hr>
                 </div>
             </div>
         </div>
@@ -59,7 +62,7 @@
 
     <script>
         let img = new Image()
-        img.src = "images/samples/mobile1.jpeg";
+        img.src = "images/samples/main.jpg";
 
         img.onload = function () {
             console.log("loaded...", "$$$$");
@@ -70,6 +73,9 @@
             }).then((result) => {
                 console.log(result, "$$$$");
                 $('#result').text(result.text);
+                var node = document.getElementById('result'),
+                    textContent = node.textContent;
+                responsiveVoice.speak(textContent);
             })
         }
     </script>
