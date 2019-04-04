@@ -19,7 +19,7 @@
     }
 
     .rounded {
-        height: 800px;
+        height: 350px;
         width: 100%;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     }
@@ -30,20 +30,21 @@
         <div class="container">
             <div class="jumbotron">
                 <div class="display-4 mb-3">Scanned Image</div>
-
-                <img src="images/samples/scanned.jpg" class="img-fluid rounded" alt="img1">
+                <div class="card card-body">
+                <img src="images/samples/card.jpg" class="img-fluid rounded" alt="img1">
                 <hr>
                 <h2>Result</h2>
                 <span id="progress"></span>
                 <div id="result"></div>
                 <hr>
+                </div>
             </div>
         </div>
     </section>
 
     <script>
         let img = new Image()
-        img.src = "images/samples/scanned.jpg";
+        img.src = "images/samples/card.jpg";
 
         img.onload = function () {
             console.log("loaded...", "$$$$");
