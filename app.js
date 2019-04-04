@@ -173,6 +173,29 @@ app.delete('/files/:id', (req, res) => {
     });
 });
 
+app.get('/s1', function(req,res){
+    res.render("s1");
+});
+
+app.get('/s2', function (req, res) {
+    res.render("s2");
+});
+
+app.get('/s3', function (req, res) {
+    res.render("s3");
+});
+
+app.get('/s4', function (req, res) {
+    res.render("s4");
+});
+
+app.get('/s5', function (req, res) {
+    res.render("s5");
+});
+
+app.get('/s6', function (req, res) {
+    res.render("s6");
+});
 
 app.listen(port, function () {
     console.log('Imgeech app running on port ' + port);

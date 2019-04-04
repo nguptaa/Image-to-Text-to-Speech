@@ -12,6 +12,11 @@ h6 {
     font-weight: 700;
 }
 
+.rounded {
+    height: 350px;
+    width: 100%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
 
 header.masthead {
     position: relative;
