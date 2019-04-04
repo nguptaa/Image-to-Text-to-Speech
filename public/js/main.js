@@ -37,7 +37,7 @@ $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
 
 // img-text-tesseract
 let img = new Image()
-img.src = "images/ex1.jpg"
+img.src = document.getElementById("ml").getAttribute("src")
 
 img.onload = function () {
     console.log("loaded...", "$$$$");
