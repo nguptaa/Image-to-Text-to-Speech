@@ -1,1 +1,1 @@
-<h1>Hosted on imgeech.herokuapp.com <h1>
+<h1>Hosted on <a href="imgeech.herokuapp.com" target="_blank">Heroku</a><h1>
