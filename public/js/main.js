@@ -14,6 +14,8 @@ img.onload = function () {
         $('#speak').html('<a class="click" onclick="playsound();"><i class="fas fa-volume-up fa-4x"></i></a>');
     })
 }
-var node = document.getElementById('result'),
-    textContent = node.textContent;
-responsiveVoice.speak(textContent);
+function playsound() {
+    var node = document.getElementById('result'),
+        textContent = node.textContent;
+    responsiveVoice.speak(textContent);
+}
