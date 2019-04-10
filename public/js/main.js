@@ -11,8 +11,9 @@ img.onload = function () {
     }).then((result) => {
         console.log(result, "$$$$");
         $('#result').text(result.text);
-        var node = document.getElementById('result'),
-        textContent = node.textContent;
-        responsiveVoice.speak(textContent);
+        $('#speak').html('<a class="click" onclick="playsound();"><i class="fas fa-volume-up fa-4x"></i></a>');
     })
 }
+var node = document.getElementById('result'),
+    textContent = node.textContent;
+responsiveVoice.speak(textContent);

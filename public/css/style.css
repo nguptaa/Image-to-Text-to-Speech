@@ -25,6 +25,18 @@ h6 {
 .cust{
     margin: 10px;
 }
+.click {
+    cursor: pointer;
+}
+
+.fa-volume-up {
+    color: #047AFB;
+
+}
+
+.fa-volume-up:hover {
+    color: #0056B3;
+}
 
 header.masthead {
     position: relative;
